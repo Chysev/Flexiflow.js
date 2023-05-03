@@ -1,5 +1,5 @@
-import express, { Request, Response } from "express";
-const api = express();
+import express, { Request, Response, Express } from "express";
+const api: Express = express();
 
 // JSON
 const datas: typings[] = [

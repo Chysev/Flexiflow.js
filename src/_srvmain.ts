@@ -1,5 +1,5 @@
-import express from "express";
-const server = express();
+import express, { Express } from "express";
+const server: Express = express();
 
 // middleware
 import router from "./routes/router";
@@ -27,9 +27,7 @@ const httpserver = http.createServer(server);
 reload(server)
   .then(() => {
     httpserver.listen(server.listen(3000), function () {
-      console.log(
-        "ExReact running http://localhost:3000 | http://0.0.0.0:3000"
-      );
+      console.log("ExReact - http://localhost:3000 | http://0.0.0.0:3000");
     });
   })
   .catch(function (error) {

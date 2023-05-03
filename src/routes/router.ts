@@ -1,5 +1,5 @@
-import express, { Request, Response } from "express";
-const router = express();
+import express, { Request, Response, Express } from "express";
+const router: Express = express();
 
 import React from "react";
 import ReactDOMServer from "react-dom/server";
