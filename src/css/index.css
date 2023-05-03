@@ -1,0 +1,13 @@
+div {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.ExReact {
+  display: block;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
