@@ -12,6 +12,6 @@
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["**/*.ts", "src/**/*.ts", "typings/**/*.ts"],
+  "include": ["**/*.ts", "src/**/*.ts", "types/**/*.ts"],
   "exclude": ["node_modules"]
 }
