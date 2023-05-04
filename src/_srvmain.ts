@@ -1,25 +1,21 @@
 import express, { Express } from "express";
 const server: Express = express();
 
-// middleware
+// ROUTER
 import router from "./routes/router";
-import api from "./routes/api/hello";
-import helper from "./utilities/helpers";
 
-// defaults
+// DEFAULTS
 server.set("view engine", "ejs");
-server.use(express.static("public"));
-server.use(express.static("css"));
-server.use(helper, api, router);
+server.use(router);
 
-// babel
+// BABEL
 import register from "@babel/register";
 
 register({
   extensions: [".jsx", "js", ".mjs", ".es6", ".tsx", ".es6"],
 });
 
-// server
+// SERVER
 import http from "http";
 import reload from "reload";
 const httpserver = http.createServer(server);
