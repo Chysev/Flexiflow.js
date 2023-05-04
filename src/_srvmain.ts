@@ -12,7 +12,7 @@ server.use(router);
 import register from "@babel/register";
 
 register({
-  extensions: [".jsx", "js", ".mjs", ".es6", ".tsx", ".es6"],
+  extensions: [".jsx", ".js", ".ts", ".tsx"],
 });
 
 // SERVER
