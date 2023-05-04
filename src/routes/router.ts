@@ -29,4 +29,7 @@ router.use("/api/hello", api);
 // CSS
 router.use("/css", express.static(path.join(__dirname, "../css")));
 
+// PUBLIC
+router.use("/public", express.static(path.join(__dirname, "../public")));
+
 export default router;
