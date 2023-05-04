@@ -1,19 +1,11 @@
 import express, { Request, Response, Express } from "express";
 const api: Express = express();
 
-// JSON
-const datas: typings[] = [
-  {
-    FirstName: "John",
-    LastName: "Doe",
-    Age: 20,
-    Country: "US",
-    Language: "English",
-  },
-];
+// JSON DATA
+import datas from "./[datas]";
 
 // ENDPOINT
-api.get("/api/hello", (req: Request, res: Response) => {
+api.get("/", (req: Request, res: Response) => {
   // API
   const formattedData: String = JSON.stringify(datas, null, 2);
   res.set("Content-Type", "application/json");
