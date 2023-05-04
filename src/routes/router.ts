@@ -1,16 +1,18 @@
 import express, { Request, Response, Express } from "express";
 const router: Express = express();
+import path from "path";
 
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 
-// Routes Path
+// ROUTES
 import Home from "../pages/app";
 import About from "../pages/about";
+import api from "./api/hello";
 
 export { Home, About };
 
-// Render
+// RENDERS
 router.get("/", (req: Request, res: Response) => {
   const html = ReactDOMServer.renderToString(React.createElement(Home));
   res.render("index", { html });
@@ -20,5 +22,11 @@ router.get("/about", (req: Request, res: Response) => {
   const html = ReactDOMServer.renderToString(React.createElement(About));
   res.render("index", { html });
 });
+
+// API
+router.use("/api/hello", api);
+
+// CSS
+router.use("/css", express.static(path.join(__dirname, "../css")));
 
 export default router;
