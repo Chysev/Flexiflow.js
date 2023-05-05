@@ -7,6 +7,7 @@ import router from "./routes/router";
 // DEFAULTS
 server.set("view engine", "ejs");
 server.use(router);
+server.use(express.urlencoded({ extended: false }));
 
 // BABEL
 import register from "@babel/register";

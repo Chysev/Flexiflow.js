@@ -5,6 +5,8 @@ import path from "path";
 import React from "react";
 import ReactDOMServer from "react-dom/server";
 
+router.use(express.urlencoded({ extended: false }));
+
 // ROUTES
 import Home from "../pages/app";
 import About from "../pages/about";
