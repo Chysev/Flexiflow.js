@@ -4,14 +4,13 @@
   "main": "_srvmain.js",
   "author": "Chysev",
   "license": "MIT",
-  "type": "module",
   "private": true,
   "scripts": {
-    "dev": "nodemon --watch src --watch src/pages --ext ts,tsx,css --exec 'yarn build && babel-watch build/_srvmain.js'",
-    "build": "tsc --rootDir src --module es2020 --outDir build --jsx preserve  && yarn copypaste",
-    "rebuild": "rm -rf build && yarn build && yarn copypaste",
-    "copypaste": "node build/utilities/_cpfiles.js",
-    "test": "yarn copypaste && babel-node build/_srvmain.js"
+    "dev": "exreact dev",
+    "build": "exreact build",
+    "rebuild": "exreact rebuild",
+    "test": "exreact test",
+    "production": "exreact production"
   },
   "dependencies": {
     "@babel/cli": "^7.0.0",
@@ -22,6 +21,7 @@
     "@babel/preset-react": "^7.18.6",
     "@babel/preset-typescript": "^7.21.5",
     "@babel/register": "^7.21.0",
+    "@chysev/exreact": "^1.1.9",
     "@types/reload": "^3.2.0",
     "babel-node": "^0.0.1-security",
     "babel-plugin-inline-import-data-uri": "^1.0.1",
@@ -43,6 +43,7 @@
     "babel-watch": "^7.7.2",
     "ncp": "^2.0.0",
     "nodemon": "^2.0.22",
+    "rimraf": "^5.0.0",
     "typescript": "^5.0.4"
   }
 }
