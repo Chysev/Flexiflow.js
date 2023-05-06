@@ -24,7 +24,7 @@ const httpserver = http.createServer(server);
 reload(server)
   .then(() => {
     httpserver.listen(server.listen(3000), function () {
-      console.log("ExReact - http://localhost:3000 | http://0.0.0.0:3000");
+      console.log("Flexiflow - http://localhost:3000 | http://0.0.0.0:3000");
     });
   })
   .catch(function (error) {
