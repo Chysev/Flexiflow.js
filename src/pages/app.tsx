@@ -1,11 +1,11 @@
 
 import React from "react"
-import ExReact from "../public/ExReact500px.png"
+import Flexiflow from "../../public/Flexiflow.png"
 
 const Home = () => {
     return (
         <div>
-            <img src={ExReact} className="ExReact" />
+            <img src={Flexiflow} className="ExReact" />
         </div>
     )
 }
