@@ -29,9 +29,9 @@ router.get("/about", (req: Request, res: Response) => {
 router.use("/api/hello", api);
 
 // CSS
-router.use("/css", express.static(path.join(__dirname, "../css")));
+router.use("/css", express.static(path.join(__dirname, "../../src/css")));
 
 // PUBLIC
-router.use("/public", express.static(path.join(__dirname, "../public")));
+router.use("/public", express.static(path.join(__dirname, "../../public")));
 
 export default router;
