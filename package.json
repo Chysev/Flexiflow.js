@@ -1,18 +1,18 @@
 {
-  "name": "express-react-ts-v0.0.1",
+  "name": "flexiflow-v0.0.1",
   "version": "0.0.1",
   "main": "_srvmain.js",
   "author": "Chysev",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "exreact dev",
-    "build": "exreact build",
-    "rebuild": "exreact rebuild",
-    "test": "exreact test",
-    "production": "exreact production"
+    "dev": "flexiflow dev",
+    "build": "flexiflow build",
+    "rebuild": "flexiflow rebuild",
+    "test": "flexiflow test",
+    "production": "flexiflow production"
   },
   "dependencies": {
-    "@chysev/exreact": "^1.6.6"
+    "flexiflow": "^1.0.9"
   }
 }
