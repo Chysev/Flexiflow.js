@@ -1,3 +1,3 @@
-# ExReact
+# Flexiflow.js
 
 ### In Heavy Development
