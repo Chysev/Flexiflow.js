@@ -8,30 +8,28 @@ import ReactDOMServer from "react-dom/server";
 router.use(express.urlencoded({ extended: false }));
 
 // ROUTES
-import Home from "../pages/app";
-import About from "../pages/about";
-import api from "./api/hello";
+import Routes from "./routes";
 
-export { Home, About };
-
-// RENDERS
-router.get("/", (req: Request, res: Response) => {
-  const html = ReactDOMServer.renderToString(React.createElement(Home));
-  res.render("index", { html });
-});
-
-router.get("/about", (req: Request, res: Response) => {
-  const html = ReactDOMServer.renderToString(React.createElement(About));
-  res.render("index", { html });
-});
+for (const [key, PageComponent] of Object.entries(Routes.pages)) {
+  const route = "Home" ? "/" : `/${key.toLowerCase()}`;
+  router.get(route, (req: Request, res: Response) => {
+    const html = ReactDOMServer.renderToString(
+      React.createElement(PageComponent)
+    );
+    res.render("index.ejs", { html });
+  });
+}
 
 // API
-router.use("/api/hello", api);
+router.use("/api/hello", Routes.api.Hello);
 
 // CSS
-router.use("/css", express.static(path.join(__dirname, "../../src/css")));
+router.use("/css", express.static(path.join(__dirname, Routes.static.css)));
 
 // PUBLIC
-router.use("/public", express.static(path.join(__dirname, "../../public")));
+router.use(
+  "/public",
+  express.static(path.join(__dirname, Routes.static.public))
+);
 
 export default router;
