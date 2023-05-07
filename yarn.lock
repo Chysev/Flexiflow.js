@@ -1175,13 +1175,6 @@
   resolved "https://registry.yarnpkg.com/@types/mime/-/mime-1.3.2.tgz#93e25bf9ee75fe0fd80b594bc4feb0e862111b5a"
   integrity sha512-YATxVxgRqNH6nHEIsvg6k2Boc1JHI9ZbH5iWFFv/MTkchz3b1ieGDa5T0a9RznNdI0KhVbdbWSN+KWWrQZRxTw==
 
-"@types/ncp@^2.0.5":
-  version "2.0.5"
-  resolved "https://registry.yarnpkg.com/@types/ncp/-/ncp-2.0.5.tgz#5c53b229a321946102a188b603306162137f4fb9"
-  integrity sha512-ocK0p8JuFmX7UkMabFPjY0F7apPvQyLWt5qtdvuvQEBz9i4m2dbzV+6L1zNaUp042RfnL6pHnxDE53OH6XQ9VQ==
-  dependencies:
-    "@types/node" "*"
-
 "@types/node@*":
   version "20.1.0"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-20.1.0.tgz#258805edc37c327cf706e64c6957f241ca4c4c20"
@@ -2014,10 +2007,10 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-flexiflow@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/flexiflow/-/flexiflow-1.2.0.tgz#7ceb6833e1426957474f6dc39ec909572c7df9ad"
-  integrity sha512-Qfj3y5D/Iz9oF67j6+nNi7e9jgeF+SvDmJl6+Cx2G1l0kFCcxwIewOvW6AuM3g5gqavkfVus22nJhccDO/CuVA==
+flexiflow@^1.2.7:
+  version "1.2.7"
+  resolved "https://registry.yarnpkg.com/flexiflow/-/flexiflow-1.2.7.tgz#46bd5a1949f70ade78afdb842ee6b308594e8d06"
+  integrity sha512-ev7kEecZfY2oC0gDyllYB+9J4CmkEHxwPpgFEal50tLjaybHLdNmM+bKYjd6FiRQcR+PsJpsh35tqEB1HmISLA==
   dependencies:
     "@babel/cli" "^7.0.0"
     "@babel/core" "^7.0.0"
@@ -2029,7 +2022,6 @@ flexiflow@^1.2.0:
     "@babel/register" "^7.21.0"
     "@types/babel__register" "^7.17.0"
     "@types/express" "^4.17.17"
-    "@types/ncp" "^2.0.5"
     "@types/react" "^18.2.0"
     "@types/react-dom" "^18.2.1"
     "@types/reload" "^3.2.0"
@@ -2040,7 +2032,6 @@ flexiflow@^1.2.0:
     ejs "^3.1.9"
     express "^4.18.2"
     jsx-transform "^2.4.1"
-    ncp "^2.0.0"
     nodemon "^2.0.22"
     react "^18.2.0"
     react-dom "^18.2.0"
@@ -2693,11 +2684,6 @@ ms@2.1.3, ms@^2.1.1:
   version "2.1.3"
   resolved "https://registry.yarnpkg.com/ms/-/ms-2.1.3.tgz#574c8138ce1d2b5861f0b44579dbadd60c6615b2"
   integrity sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==
-
-ncp@^2.0.0:
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/ncp/-/ncp-2.0.0.tgz#195a21d6c46e361d2fb1281ba38b91e9df7bdbb3"
-  integrity sha512-zIdGUrPRFTUELUvr3Gmc7KZ2Sw/h1PiVM0Af/oHB6zgnV1ikqSfRk+TOufi79aHYCW3NiOXmr1BP5nWbzojLaA==
 
 negotiator@0.6.3:
   version "0.6.3"
