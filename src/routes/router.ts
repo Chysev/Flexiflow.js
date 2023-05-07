@@ -11,7 +11,7 @@ router.use(express.urlencoded({ extended: false }));
 import Routes from "./routes";
 
 for (const [key, PageComponent] of Object.entries(Routes.pages)) {
-  const route = "Home" ? "/" : `/${key.toLowerCase()}`;
+  const route = key.toLowerCase() === "home" ? "/" : `/${key.toLowerCase()}`;
   router.get(route, (req: Request, res: Response) => {
     const html = ReactDOMServer.renderToString(
       React.createElement(PageComponent)
