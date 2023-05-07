@@ -6,6 +6,7 @@ import React from "react";
 import ReactDOMServer from "react-dom/server";
 
 router.use(express.urlencoded({ extended: false }));
+router.set("views", "template");
 
 // ROUTES
 import Routes from "./routes";

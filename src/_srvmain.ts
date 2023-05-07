@@ -1,10 +1,12 @@
 import express, { Express } from "express";
 const server: Express = express();
+import path from "path";
 
 // ROUTER
 import router from "./routes/router";
 
 // DEFAULTS
+console.log(__dirname);
 server.set("view engine", "ejs");
 server.use(router);
 server.use(express.urlencoded({ extended: false }));
