@@ -2,7 +2,7 @@
 import React from "react"
 import Flexiflow from "../../public/Flexiflow.png"
 
-const Home = () => {
+const app = () => {
     return (
         <div>
             <img src={Flexiflow} className="ExReact" />
@@ -10,4 +10,4 @@ const Home = () => {
     )
 }
 
-export default Home
+export default app
