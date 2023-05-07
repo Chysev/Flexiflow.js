@@ -11,10 +11,13 @@ server.use(express.urlencoded({ extended: false }));
 
 // BABEL
 import register from "@babel/register";
+import babelConfig from "../babel.config.js";
 
 register({
   extensions: [".jsx", ".js", ".ts", ".tsx"],
 });
+
+register(babelConfig);
 
 // SERVER
 import http from "http";
