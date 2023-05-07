@@ -2,12 +2,11 @@ div {
   display: flex;
   align-items: center;
   width: 100%;
+  height: 100vh;
 }
 
 .ExReact {
   display: block;
   margin: auto;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  width: 40%;
 }
