@@ -5,6 +5,7 @@ import Hello from "./api/hello";
 const Routes = {
   static: {
     css: "../../src/css",
+    global: "../../src/global",
     public: "../../public",
   },
   pages: {

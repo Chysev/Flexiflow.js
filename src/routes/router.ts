@@ -11,26 +11,26 @@ router.set("views", "template");
 // ROUTES
 import Routes from "./routes";
 
+// PAGES
 for (const [key, PageComponent] of Object.entries(Routes.pages)) {
   const route = key.toLowerCase() === "home" ? "/" : `/${key.toLowerCase()}`;
   router.get(route, (req: Request, res: Response) => {
     const html = ReactDOMServer.renderToString(
       React.createElement(PageComponent)
     );
-    res.render("index.ejs", { html });
+    res.render("index", { html });
   });
+}
+
+// STATICS
+for (const [key, StaticComponent] of Object.entries(Routes.static)) {
+  router.use(
+    `/${key.toLowerCase()}`,
+    express.static(path.join(__dirname, StaticComponent))
+  );
 }
 
 // API
 router.use("/api/hello", Routes.api.Hello);
-
-// CSS
-router.use("/css", express.static(path.join(__dirname, Routes.static.css)));
-
-// PUBLIC
-router.use(
-  "/public",
-  express.static(path.join(__dirname, Routes.static.public))
-);
 
 export default router;
