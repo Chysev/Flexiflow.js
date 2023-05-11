@@ -1,9 +1,8 @@
 import express, { Express } from "express";
 const server: Express = express();
-import path from "path";
 
 // ROUTER
-import router from "./routes/router";
+import router from "./routes/coreRouter";
 
 // DEFAULTS
 console.log(__dirname);
