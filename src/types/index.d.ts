@@ -30,3 +30,5 @@ interface typings {
   Country: String;
   Language: String;
 }
+
+declare module "flexiflow/FlexiRouter";
