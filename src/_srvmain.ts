@@ -1,6 +1,6 @@
 import express, { Express } from "express";
 const server: Express = express();
-import flexiserver from "flexiflow/flexiserver";
+import flexiserver from "flexiflow/FlexiServer";
 
 // ROUTER
 import router from "./routes/coreRouter";
