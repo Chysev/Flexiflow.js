@@ -32,3 +32,4 @@ interface typings {
 }
 
 declare module "flexiflow/FlexiRouter";
+declare module "flexiflow/FlexiServer";
