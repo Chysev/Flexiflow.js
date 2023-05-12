@@ -13,6 +13,6 @@
     "production": "flexiflow production"
   },
   "dependencies": {
-    "flexiflow": "^1.2.8"
+    "flexiflow": "^1.2.9"
   }
 }
