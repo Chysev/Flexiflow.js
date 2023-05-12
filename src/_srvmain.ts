@@ -1,12 +1,11 @@
 import express, { Express } from "express";
 const server: Express = express();
+import flexiserver from "flexiflow/flexiserver";
 
 // ROUTER
 import router from "./routes/coreRouter";
 
 // DEFAULTS
-console.log(__dirname);
-server.set("view engine", "ejs");
 server.use(router);
 server.use(express.urlencoded({ extended: false }));
 
@@ -21,16 +20,4 @@ register({
 register(babelConfig);
 
 // SERVER
-import http from "http";
-import reload from "reload";
-const httpserver = http.createServer(server);
-
-reload(server)
-  .then(() => {
-    httpserver.listen(server.listen(3000), function () {
-      console.log("Flexiflow - http://localhost:3000 | http://0.0.0.0:3000");
-    });
-  })
-  .catch(function (error) {
-    console.error("Could not reload", error);
-  });
+flexiserver(server);
