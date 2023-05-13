@@ -1,20 +1,9 @@
-import Home from "../pages/app";
-import About from "../pages/about";
-import Hello from "./api/hello";
-
-const Routes = {
+const routes = {
   static: {
     css: "../../src/css",
     global: "../../src/global",
     public: "../../public",
   },
-  pages: {
-    Home: Home,
-    About: About,
-  },
-  api: {
-    Hello: Hello,
-  },
 };
 
-export default Routes;
+export default routes;
