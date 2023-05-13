@@ -10,15 +10,15 @@ router.use(express.urlencoded({ extended: false }));
 router.set("views", "template");
 
 // ROUTES
-import Routes from "./routes";
+import routes from "./routes";
 
 // PAGES
-FlexiPageRouter(Routes.pages, router);
+FlexiPageRouter("pages", router);
 
 // STATICS
-FlexiStaticRouter(Routes.static, router, express);
+FlexiStaticRouter(routes.static, router, express);
 
 // API
-FlexiApiRouter(Routes.api, router);
+FlexiApiRouter("api", router);
 
 export default router;
