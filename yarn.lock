@@ -2007,10 +2007,10 @@ find-up@^3.0.0:
   dependencies:
     locate-path "^3.0.0"
 
-flexiflow@^1.3.1:
-  version "1.3.1"
-  resolved "https://registry.yarnpkg.com/flexiflow/-/flexiflow-1.3.1.tgz#6f98dba02bd9b372e05aa586312f5af4ecab7e3e"
-  integrity sha512-XBeB9qq5HyKUI8AWz51HopOZ8H2KIxsu4g61Fic/hqHh0bb4SVFAobxXdECWZ7CIJZQj5IFghKKjoYwq90Kztg==
+flexiflow@^1.3.2:
+  version "1.3.2"
+  resolved "https://registry.yarnpkg.com/flexiflow/-/flexiflow-1.3.2.tgz#f8106456c5940d1b662d68526d8243dd9fc41946"
+  integrity sha512-68IHZ1TozbH7EzE1JVepHWEDxLgtQdlN+o+5LuLT/CCuelzfqQSwxnNnW1UTnHAREGVLc345an60exiHGoYksg==
   dependencies:
     "@babel/cli" "^7.0.0"
     "@babel/core" "^7.0.0"
